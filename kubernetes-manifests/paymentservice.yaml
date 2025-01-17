@@ -43,7 +43,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: paymentservice
+        image: docker.io/daveinga1/paymentservice
         ports:
         - containerPort: 50051
         env:

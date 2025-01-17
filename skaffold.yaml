@@ -23,29 +23,29 @@ build:
   # must provide a "default repo" using one of the methods described
   # here:
   # https://skaffold.dev/docs/concepts/#image-repository-handling
-  - image: emailservice
+  - image: docker.io/daveinga1/emailservice
     context: src/emailservice
-  - image: productcatalogservice
+  - image: docker.io/daveinga1/productcatalogservice
     context: src/productcatalogservice
-  - image: recommendationservice
+  - image: docker.io/daveinga1/recommendationservice
     context: src/recommendationservice
-  - image: shoppingassistantservice
+  - image: docker.io/daveinga1/shoppingassistantservice
     context: src/shoppingassistantservice
-  - image: shippingservice
+  - image: docker.io/daveinga1/shippingservice
     context: src/shippingservice
-  - image: checkoutservice
+  - image: docker.io/daveinga1/checkoutservice
     context: src/checkoutservice
-  - image: paymentservice
+  - image: docker.io/daveinga1/paymentservice
     context: src/paymentservice
-  - image: currencyservice
+  - image: docker.io/daveinga1/currencyservice
     context: src/currencyservice
-  - image: cartservice
+  - image: docker.io/daveinga1/cartservice
     context: src/cartservice/src
     docker:
       dockerfile: Dockerfile
-  - image: frontend
+  - image: docker.io/daveinga1/frontend
     context: src/frontend
-  - image: adservice
+  - image: docker.io/daveinga1/adservice
     context: src/adservice
   tagPolicy:
     gitCommit: {}
@@ -102,7 +102,7 @@ requires:
   - app
 build:
   artifacts:
-  - image: loadgenerator
+  - image: docker.io/daveinga1/loadgenerator
     context: src/loadgenerator
 manifests:
   rawYaml:
